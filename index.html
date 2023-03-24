@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interactive-rating-compenent</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div id="rating-state">
+            <div class="container">
+                <picture class="shape">
+                    <img src="./images/icon-star.svg" alt="star-icon">
+                </picture>
+                    <div class="text">
+                        <h1>How did we do?</h1>
+                    <p>Please let us know how we did with your support request. All feedback is appreciated 
+                        to help us improve our offering!</p>
+                    </div>
+                    <div class="rating-scale">
+                        <button class="shape" data-cursor="active">1</button>
+                        <button class="shape" data-cursor="active">2</button>
+                        <button class="shape" data-cursor="active">3</button>
+                        <button class="shape" data-cursor="active">4</button>
+                        <button class="shape" data-cursor="active">5</button>
+                    </div>
+                    <button class="btn">Submit</button>
+            </div>
+        </div>
+
+        <div id="Thank-you-state" class="hidden">
+            <div class="container">
+                <picture>
+                    <img src="./images/illustration-thank-you.svg" alt="illustration-thank-you">
+                </picture>
+                
+                <div class="selection">
+                    <p id="selection">You selected none out of 5</p>
+                </div>
+    
+                <div class="text">
+                    <h1>Thank you!</h1>
+                    <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+                    don’t hesitate to get in touch!
+                    </p>
+                </div>
+    
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

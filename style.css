@@ -1,0 +1,175 @@
+/*?---------- Font Upload ----------*/
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/*?---------- CSS Resets ----------*/
+/* Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+}*
+/* 
+Remove default margin
+Remove built-in form typography styles
+ */
+* {
+    margin: 0;
+    font: inherit;
+}
+/* Allow percentage-based heights in the application */
+html {
+    height: 100%;
+}
+
+/* Typographic tweaks!
+Add accessible line-height
+Improve text rendering */
+body {
+    min-height: 100vh;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Media defaults */
+img, picture, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Avoid text overflows */
+p, h1 {
+    overflow-wrap: break-word;
+}
+
+/*?---------- Custom Properties ----------*/
+:root {
+    /* colors */
+    --clr-primary: hsl(25, 97%, 53%);
+    --clr-neutral-900: hsl(0, 0%, 100%);
+    --clr-neutral-700: hsl(217, 12%, 63%);
+    --clr-neutral-800: hsl(217, 12%, 23%);
+    --clr-neutral-400: hsl(216, 12%, 54%);
+    --clr-neutral-200: hsl(213, 19%, 18%);
+    --clr-neutral-100: hsl(216, 12%, 8%);
+
+    /* font family */
+    --ff-primary: 'Overpass';
+    --ff-alternative: Sans-serif;
+
+    /* font sizes */
+    --fs-400: 0.9375rem;
+    --fs-700: 1.625rem;
+
+    /* font weights */
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+/*?---------- General Styling ----------*/
+body {
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-neutral-700);
+    font-family: var(--ff-primary), var(--ff-alternative);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    --padding: 2rem;
+    --spacing: 2rem;
+
+    background-color: var(--clr-neutral-200);
+    max-width: 400px;
+    padding: var(--padding);
+    border-radius: 2rem;
+    display: grid;
+    gap: var(--spacing);
+}
+
+.container h1 {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-900);
+}
+
+.hidden {
+    display: none;
+}
+
+/*?---------- Rating State Styling ----------*/
+.rating-scale {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.shape {
+    background: var(--clr-neutral-800);
+    width: 3rem;
+    display: grid;
+    place-content: center;
+    aspect-ratio: 1/1;
+    border: none;
+    color: var(--clr-neutral-700);
+    border-radius: 50%;
+    font-weight: var(--fw-bold);
+    text-align: center;
+    line-height: 1;
+}
+
+.shape[data-cursor="active"] {
+    cursor: pointer;
+}
+
+.shape[data-cursor="active"]:hover {
+    background-color: var(--clr-neutral-700);
+    color: var(--clr-neutral-900);
+    transition: all .2s ease-in-out;
+}
+
+.shape[data-cursor="active"]:active,
+.shape[data-cursor="active"]:focus{
+    color: var(--clr-neutral-900);
+    background-color: var(--clr-primary);
+}
+
+.btn{
+    cursor: pointer;
+    color: var(--clr-neutral-900);
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    background-color: var(--clr-primary);
+    border: none;
+    border-radius: 50vw;
+    padding: .5rem 0;
+    transition: all .2s ease-in-out;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn:hover, .btn:focus, .btn:active{
+    color: var(--clr-primary);
+    background-color: var(--clr-neutral-900);
+    transition: all .2s ease-in-out;
+}
+
+/*?---------- Thank You State Styling ----------*/
+#Thank-you-state .container {
+    --padding: 3rem;
+
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: var(--padding) 2rem;
+}
+
+.selection {
+    background-color: var(--clr-neutral-800);
+    color: var(--clr-primary);
+    line-height: 1;
+    padding: .6rem 1.6rem;
+    border-radius: 50vw;
+}

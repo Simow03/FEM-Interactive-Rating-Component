@@ -29,7 +29,6 @@ Users should be able to:
 
 ![Rating State](./images/Screenshot%202023-03-25%20021341.png)
 ![Submited State](./images/Screenshot%202023-03-25%20022139.png)
-![Active State](./images/Recording%202023-03-25%20021935.mp4)
 
 ### Links
 

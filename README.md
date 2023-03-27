@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-There is nothing much going on html and css part except for the use of the data attributes. They are really helpful if you want to style two different things that they have some common properties and differ on others .
+There is nothing much going on html and css part except for the use of the data attributes. They are really helpful if you want to style two different things that they have some common properties and differ on others.
 
 For example :
 

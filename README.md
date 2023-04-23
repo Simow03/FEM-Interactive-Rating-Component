@@ -27,8 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Rating State](./images/Screenshot%202023-03-25%20021341.png)
-![Submited State](./images/Screenshot%202023-03-25%20022139.png)
+![Submited State](./images/Recording-animation.gif)
 
 ### Links
 
